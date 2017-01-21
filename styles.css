@@ -3,14 +3,6 @@ body {
   font-family: Georgia;
   }
 
-  #main {
-  width: 80%;
-  max-width: 950px;
-  border: 1px gray solid;
-  margin: auto;
-  padding: 10px;
-  background-color: lightsteelblue;
-  }
 
   #header {
   margin-top: 0;
