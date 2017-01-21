@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -25,10 +26,23 @@
   <div id="header">
   <h1 align="center">JavaScript Quiz</h1>
   </div><!-- close header div -->
-  Have you ever wanted to play the price is right? Now is your chance! Click the start button to begin the game.
-  <!--<script>
-    alert(1);
-  </script>-->
+  <p>Have you ever wanted to play the price is right? Now is your chance! Click the Start button to begin the game.</p>
+  <form id="form1" action=" ">
+  <input type="submit" id="start" value="Start"  style="font-size : 50px; width: 400px; height: 100px;" />
+  </form>
+  <button onclick= "picture('1.jpg', '1');">Start</button>
+
+  <script>
+    function picture(src, alt) {
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = 160;
+    img.height = 200;
+    img.alt = alt;
+
+    document.body.appendChild(img);
+  }
+  </script>
 </body>
 
 </html>

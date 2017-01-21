@@ -1,5 +1,6 @@
 body {
-  background-color: lightsteelblue;
+  background-color: slategray;
+  font-family: Impact;
   font-family: Helvetica;
   }
 
@@ -9,7 +10,7 @@ body {
   border: 1px gray solid;
   margin: auto;
   padding: 10px;
-  background-color: white;
+  background-color: lightsteelblue;
   border-radius: 10px;
   }
 
@@ -17,9 +18,10 @@ body {
   margin-top: 0;
   border: 2px solid black;
   padding: 5px;
-  height: 250px;
+  height: 100px;
   background: beige;
   background-image: url("background.jpg");
   color: white;
   border: 1px solid; color: black
+
 }
