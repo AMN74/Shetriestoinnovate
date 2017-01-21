@@ -1,7 +1,6 @@
 body {
   background-color: slategray;
-  font-family: Impact;
-  font-family: Helvetica;
+  font-family: Georgia;
   }
 
   #main {
@@ -11,7 +10,6 @@ body {
   margin: auto;
   padding: 10px;
   background-color: lightsteelblue;
-  border-radius: 10px;
   }
 
   #header {
