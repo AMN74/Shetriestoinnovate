@@ -10,7 +10,7 @@
 <body align="center">
   <nav>
   <ul>
-    <li><a href="priceGuesser.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><strong>Start</strong></li>
     <li><a href="directions.html">Instructions</a></li>
   </ul>
@@ -81,13 +81,16 @@ document.getElementById("form1").onsubmit=function(){
 
   if(i < 9){
     document.getElementById("image").src=images[i];
-    results();
+    if(i != 8){
+      results();
+    }
   }
   i = i + 1;
   return false;
 }
 
 function results(){
+  document.getElementById("prices").innerHTML = "Your price for " + items[i] + ": "  + priceRanges[prices[i]];
     document.getElementById("walmart").innerHTML = "Walmart's price for " + items[i] + ": "  + walmartPrices[i];
     document.getElementById("target").innerHTML = "Target's price for " + items[i] + ": "  + targetPrices[i];
     document.getElementById("cvs").innerHTML = "CVS's price for " + items[i] + ": "  + cvsPrices[i];
