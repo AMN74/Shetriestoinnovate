@@ -53,7 +53,12 @@ document.getElementById("form1").onsubmit=function(){
   }
   var price = parseInt(document.querySelector('input[name = "price"]:checked').value);
   var rate = parseInt(document.querySelector('input[name = "rate"]:checked').value);
-  var comment = document.getElementById("comments").value;;
+  var comment = document.getElementById("comments").value;
+  var priceRanges = ["<$1", "$1-$3", "$3-$5", "$5-$7", "$7-$9", ">$9"];
+  var targetPrices = [2.94, 4.49, 5.99, 6.99, 3.97, 3.79, 3.59, 6.33];
+  var walmartPrices = [2.94, 4.48, 5.97, 5.44, 3.97, 6.99, 2.94, 13.12];
+  var walgreensPrices = [3.99, 6.29, 5.97, 7.99, 5.49, 5.99, 7.00, 6.00];
+  var cvsPrices = [4.39, 4.29, 6.00, 9.99, 3.79, 3.79, 5.49, 7.00];
 
   prices[i] = price;
   ratings[i] = rate;
@@ -69,7 +74,6 @@ document.getElementById("form1").onsubmit=function(){
 }
 
 function results(){
-  var 
   //clear screen and display results
 }
 
