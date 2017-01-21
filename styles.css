@@ -1,5 +1,5 @@
 body {
-  background-color: slategray;
+  background-color: Lavender;
   font-family: Georgia;
   }
 
@@ -7,13 +7,13 @@ body {
   #header {
   margin-top: 0;
   padding: 5px;
-  height: 100px;
+  height: 200px;
   background-image: url("background.jpg");
-  color: white;
+  color: Azure;
   border: 1px solid; color: black
 
 }
 
-li { 
+li {
   list-style-type: none;
 }
