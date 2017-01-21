@@ -4,20 +4,13 @@
 <head>
   <title>Price Guesser</title>
   <link rel="stylesheet" href="styles.css">
-  
+
 </head>
 
-<script>
-  function start(src, alt) {
-    var img = document.createElement("img");
-    img.src = src;
-    img.width = 160;
-    img.height = 200;
-    img.alt = alt;
-    document.body.appendChild(img);
-}
-</script>
+<body>
 
+<form>
+<img src="1.jpg" alt="1" style="width:150px;height:180px;">
 <p>What price do you think the average consumer would pay for this product?</p>
 <input type="radio" name="variable" value="1" />$1-$3<br />
 <input type="radio" name="variable" value="2" />$3-$5<br />
@@ -28,12 +21,17 @@
 <input type="radio" name="variable" value="2" />Like it<br />
 <input type="radio" name="variable" value="3" />Neutral<br />
 <input type="radio" name="variable" value="4" />Leave it<br />
-<input type="radio" name="variable" value="4" />Hate it<br />
+<input type="radio" name="variable" value="5" />Hate it<br />
 <p>Do you have any comments about the product?</p>
 <input type="text">
 <br></br>
-<button onclick= "start('2.jpg', '2');">Submit</button>
-<br></br>
+<input type="submit" value="Submit">
+</form>
+<script>
+  function submit(src, alt) {
+
+  }
+</script>
 
 
 
