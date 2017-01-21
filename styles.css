@@ -1,6 +1,6 @@
 body {
   background-color: Lavender;
-  font-family: Georgia;
+  font-family: 'Economica', sans-serif;;
   }
 
 
@@ -10,7 +10,7 @@ body {
   height: 250px;
   background-image: url("background.jpg");
   color: Azure;
-  border: 1px solid; color: black
+  border: 1px solid; color: white
 
 }
 
