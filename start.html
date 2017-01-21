@@ -41,6 +41,14 @@
 
 </form>
 <p id="result"></p>
+<p id="prices"></p>
+<p id="ratings"></p>
+<p id="comments"></p>
+<p id="walmart"></p>
+<p id="target"></p>
+<p id="cvs"></p>
+<p id="walgreens"></p>
+
 
 <script type="text/javascript">
 var items = ["men's shampoo", "women's shampoo", "men's razors", "women's razors", "men's deodorant", "women's deodorant", "men's condoms", "women's condoms"]
@@ -57,10 +65,12 @@ var cvsPrices = [4.39, 4.29, 6.00, 9.99, 3.79, 3.79, 5.49, 7.00];
 var i = 0;
 
 document.getElementById("form1").onsubmit=function(){
-  if(i == 8){
-    results();
+  if(i > 8){
+    document.getElementById("walmart").innerHTML = "";
+    document.getElementById("target").innerHTML = "";
+    document.getElementById("cvs").innerHTML = "";
+    document.getElementById("walgreens").innerHTML = "";
   }
-
   var price = parseInt(document.querySelector('input[name = "price"]:checked').value);
   var rate = parseInt(document.querySelector('input[name = "rate"]:checked').value);
   var comment = document.getElementById("comments").value;
@@ -71,20 +81,20 @@ document.getElementById("form1").onsubmit=function(){
 
   if(i < 9){
     document.getElementById("image").src=images[i];
+    results();
   }
-
   i = i + 1;
-
   return false;
 }
 
 function results(){
-  document.getElementById("result").innerHTML = "Results: ";
+    document.getElementById("walmart").innerHTML = "Walmart's price for " + items[i] + ": "  + walmartPrices[i];
+    document.getElementById("target").innerHTML = "Target's price for " + items[i] + ": "  + targetPrices[i];
+    document.getElementById("cvs").innerHTML = "CVS's price for " + items[i] + ": "  + cvsPrices[i];
+    document.getElementById("walgreens").innerHTML = "Walgreen's price for " + items[i] + ": "  + walgreensPrices[i];
 }
 
-function end(){
 
-}
 
 
 </script>

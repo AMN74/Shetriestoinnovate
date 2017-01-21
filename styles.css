@@ -1,6 +1,10 @@
 body {
   background-color: Lavender;
-  font-family: 'Economica', sans-serif;;
+ p {
+   font-family: 'PressStart2PRegular';
+   font-weight: normal;
+   font-style: normal;
+}
   }
 
 
@@ -11,7 +15,11 @@ body {
   background-image: url("background.jpg");
   color: Azure;
   border: 1px solid; color: white
-
+p {
+   font-family: 'PressStart2PRegular';
+   font-weight: normal;
+   font-style: normal;
+}
 }
 
 h1 {
@@ -19,10 +27,9 @@ h1 {
     font-weight: bold;
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
+div {
+    font-family:Courier New;
 }
-
 li {
   list-style-type: none;
 }
