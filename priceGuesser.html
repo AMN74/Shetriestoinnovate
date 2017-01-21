@@ -30,17 +30,17 @@
   <form id="form1" action=" ">
   <input type="submit" id="start" value="Start"  style="font-size : 50px; width: 400px; height: 100px;" />
   </form>
-  <button onclick= "picture('1.jpg', '1');">Start</button>
+  <button onclick= "start('1.jpg', '1'); style.sdisplay = 'none'">Start</button>
 
   <script>
-    function picture(src, alt) {
-    var img = document.createElement("img");
-    img.src = src;
-    img.width = 160;
-    img.height = 200;
-    img.alt = alt;
-
-    document.body.appendChild(img);
+  var button
+    function start(src, alt) {
+      var img = document.createElement("img");
+      img.src = src;
+      img.width = 160;
+      img.height = 200;
+      img.alt = alt;
+      document.body.appendChild(img);
   }
   </script>
 </body>
