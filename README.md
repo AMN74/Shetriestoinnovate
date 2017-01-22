@@ -1,2 +1,2 @@
 # Shetriestoinnovate
-FirstInsight Projecr
+FirstInsight Project
