@@ -105,10 +105,10 @@ function results(){
 
   } else {
     document.getElementById("prices").innerHTML = "Your price for " + items[i-2] + " was "  + priceRanges[prices[i]];
-      document.getElementById("walmart").innerHTML = "Walmart's price for " + items[i-2] + " was "  + walmartPrices[i-2];
-      document.getElementById("target").innerHTML = "Target's price for " + items[i-2] + " was "  + targetPrices[i-2];
+      document.getElementById("walmart").innerHTML = "Walmart's price for " + items[i-2] + " was $"  + walmartPrices[i-2];
+      document.getElementById("target").innerHTML = "Target's price for " + items[i-2] + " was $"  + targetPrices[i-2];
       document.getElementById("cvs").innerHTML = "CVS's price for " + items[i] + " was "  + cvsPrices[i];
-      document.getElementById("walgreens").innerHTML = "Walgreen's price for " + items[i-2] + " was "  + walgreensPrices[i-1];
+      document.getElementById("walgreens").innerHTML = "Walgreen's price for " + items[i-2] + " was $"  + walgreensPrices[i-1];
   }
 
 }
